@@ -106,7 +106,7 @@ main {
     line-height: 21px;
     display: none;
     position: absolute;
-    bottom: 250px;
+    bottom: -53px;
 
 }
 
@@ -269,6 +269,10 @@ input[type="radio"] {
         width: 18px;
         height: 18px;
     }
-
+    .error {
+        position: absolute;
+        bottom: -50px;
+    
+    }
 
 }
