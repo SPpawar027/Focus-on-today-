@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #48A30012;
+
+}
+
+main {
+    font-family: poppins;
+    padding: 0 10px;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px;
+    font-size: 4em;
+    color: #48A300;
+    user-select: none;
+
+}
+
+.span-heading {
+    color: #61481C;
+
+}
+
+.app-container {
+    background-color: #FBFBFB;
+    max-width: 660px;
+    margin: auto;
+    padding: 10px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+.sun {
+    animation: rotateAnimation 8s linear infinite;
+    
+ 
+}
+.eye{
+    position: absolute;
+    left: 136px;
+    top: 45px;
+}
+
+.todaysun {
+    position: relative;
+    
+    display: flex;
+    font-weight: 700;
+    gap: 20px;
+    font-size: 20px;
+    line-height: 48px;
+    user-select: none;
+
+}
+
+.baruppr {
+    color: #858585;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.uppersider {
+    height: 30px;
+    background-color: #48A3001A;
+    border-radius: 15px;
+    margin-bottom: 55px;
+    position: relative;
+
+}
+
+.bar-text {
+    z-index: 10;
+    color: #EEFFE0;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    padding-left: 15px;
+
+
+}
+
+.lowersider {
+    height: 30px;
+    background-color: #48A300;
+    width: 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+   
+   
+}
+
+.error {
+    color: #FF5151;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    display: none;
+    position: absolute;
+    bottom: 250px;
+
+}
+
+.custom-checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #61481C4D;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+input[type="radio"] {
+    accent-color: green;
+    /* Change the color of the radio button */
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.radio-box {
+
+    height: 60px;
+    border-radius: 17px 17px 17px 17px;
+    border: 1px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    padding: 10px 20px;
+    border: 1px solid #0000001A;
+}
+
+
+
+.label {
+    width: 100%;
+    /* flex-grow: 1; sir ne bola tha     */
+    /* height: 100%; */
+    align-self: stretch;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    
+
+}
+
+.label ::placeholder {
+    color: #D9D9D9;
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    user-select: none;
+}
+
+.footer {
+    color: #000000;
+    font-size: 16px;
+    max-width: 364px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+.made {
+
+    height: 28px;
+    max-width: 364px;
+    font-size: 10px;
+    font-weight: 500;
+
+
+
+}
+.tick {
+    width: 11px;
+    height: 7px;
+    top: 614px;
+    left: 462px;
+    gap: 0px;
+    border: 2px 0px 0px 0px;
+   display: none;
+
+}
+
+
+
+
+.complete .custom-checkbox{
+    width: 24px;
+    height: 24px;
+    background: #48A300;
+    border-color: #48A300;
+} 
+.complete .tick{
+    display: block;
+}
+.complete .label{
+    color: #48A300;
+    font-weight: 500;
+    text-decoration-line: line-through;
+} 
+@keyframes rotateAnimation  {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width:500px) {
+    .heading {
+        font-size: 2em;
+    }
+
+    .bar-text {
+
+        font-size: 8px;
+
+    }
+
+    .radio-box {
+
+        height: 60px;
+        border-radius: 12px 12px 12px 12px;
+
+        margin-bottom: 20px;
+
+        padding: 0px 20px;
+
+    }
+
+    .custom-checkbox {
+        width: 18px;
+        height: 18px;
+    }
+
+
+}
