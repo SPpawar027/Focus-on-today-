@@ -49,7 +49,6 @@ main {
 
 .todaysun {
     position: relative;
-    
     display: flex;
     font-weight: 700;
     gap: 20px;
@@ -68,6 +67,7 @@ main {
 }
 
 .uppersider {
+   max-width: 574px;
     height: 30px;
     background-color: #48A3001A;
     border-radius: 15px;
@@ -77,25 +77,36 @@ main {
 }
 
 .bar-text {
-    z-index: 10;
+    user-select: none;
     color: #EEFFE0;
     font-size: 10px;
     font-weight: 500;
     line-height: 15px;
     text-align: left;
     padding-left: 15px;
-
-
+    display: none;
+}
+.countcomplete{
+    z-index: 10;
+    min-width: max-content;
+    color: #EEFFE0;
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    padding-left: 15px;
 }
 
 .lowersider {
+    max-width: 100%;
     height: 30px;
     background-color: #48A300;
-    width: 0;
+    transition: 1s ease;
     border-radius: 15px;
     display: flex;
     align-items: center;
-   
+    
    
 }
 
