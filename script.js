@@ -7,6 +7,7 @@ const bartxt = document.querySelector(".bar-text")
 const countcomplete = document.querySelector(".countcomplete")
 const baruppr = document.querySelector(".baruppr");
 const footer = document.querySelector(".footer");
+
 let allQuotes = [
     " Raise the bar by completing your goals!",
     "Well begun is half done!",
@@ -51,12 +52,12 @@ bartxt.style.display ="block"
 
 
 
-console.log(input.length);
+// console.log(input.length);
 
 let arr = [...input]
 checkbox.forEach((checkboxlist) => {
     checkboxlist.addEventListener("click", (e) => {
-        console.log(arr.length)
+        // console.log(arr.length)
         const output = arr.every((elem) => {
             return elem.value
         })
@@ -70,7 +71,7 @@ checkbox.forEach((checkboxlist) => {
             // console.log(allGoals[inputid].completed);
             allGoals[inputid].complete = !allGoals[inputid].complete
             completedcount = Object.values(allGoals).filter((e) => e.complete).length
-            console.log(completedcount);
+            // console.log(completedcount);
             bartxt.style.display ="block"
             baruppr.innerHTML= allQuotes[completedcount]
             footer.innerHTML = bottomQuotes[completedcount]
@@ -80,6 +81,7 @@ checkbox.forEach((checkboxlist) => {
 
         }
         else {
+            error.innerHTML =`Please set all the ${input.length} goals!`
             error.style.display = "block"
         }
     })
